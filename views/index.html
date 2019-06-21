@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>我的小站</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="../assets/i/favicon.ico">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+    <style>
+        .bg_color{
+            background: #2e8b57;
+        }
+    </style>
+</head>
+<body>
+{{include '../subgroup/header.html'}}
+
+
+<!--轮播图-->
+<div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
+    <ul class="am-slides">
+        <li>
+            <a href="/tree">
+                <img src="../assets/img/trees/1519.JPG">
+                <div class="am-slider-desc">古树名木</div>
+            </a>
+        </li>
+        <li>
+            <a href="/wormList">
+                <img src="../assets/img/timg.jpg">
+                <div class="am-slider-desc">常见病虫害</div>
+            </a>
+        </li>
+        <li>
+            <img src="../assets/img/test.jpg">
+            <div class="am-slider-desc">这是凯尔特人标志</div>
+        </li>
+    </ul>
+</div>
+
+<!--内容列表-->
+<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+    <!--列表标题-->
+    <div class="am-list-news-hd am-cf">
+        <!--带更多链接-->
+        <a href="/" class="">
+            <h2>栏目标题</h2>
+            <span class="am-list-news-more am-fr">更多 &raquo;</span>
+        </a>
+    </div>
+
+    <div class="am-list-news-bd">
+        <ul class="am-list">
+
+            <li class="am-g am-list-item-dated">
+                <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+
+                <span class="am-list-date">2013-09-18</span>
+
+
+            </li>
+            <li class="am-g am-list-item-dated">
+                <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+
+                <span class="am-list-date">2013-10-14</span>
+
+
+            </li>
+            <li class="am-g am-list-item-dated">
+                <a href="##" class="am-list-item-hd ">“你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！</a>
+
+                <span class="am-list-date">2013-11-18</span>
+
+
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!--选项卡-->
+
+<div data-am-widget="tabs"
+     class="am-tabs am-tabs-d2"
+>
+    <ul class="am-tabs-nav am-cf">
+        <li class="am-active"><a href="[data-tab-panel-0]">青春</a></li>
+        <li class=""><a href="[data-tab-panel-1]">彩虹</a></li>
+        <li class=""><a href="[data-tab-panel-2]">歌唱</a></li>
+        <li class=""><a href="[data-tab-panel-3]">睡觉</a></li>
+    </ul>
+    <div class="am-tabs-bd">
+        <div data-tab-panel-0 class="am-tab-panel am-active">
+            【青春】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+        <div data-tab-panel-1 class="am-tab-panel ">
+            【彩虹】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+        <div data-tab-panel-2 class="am-tab-panel ">
+            【歌唱】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+        <div data-tab-panel-3 class="am-tab-panel ">
+            【睡觉】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
+        </div>
+    </div>
+</div>
+
+{{include '../subgroup/footer.html'}}
+<!--[if lt IE 9]>
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="../assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="../assets/js/amazeui.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

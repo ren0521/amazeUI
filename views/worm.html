@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>虫子</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+<header data-am-widget="header"
+        class="am-header am-header-default" style="background: #008B8B;">
+    <div class="am-header-left am-header-nav">
+        <a href="/" class="">
+            <i class="am-header-icon am-icon-home"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="/" class="">
+            <img src="../assets/img/log.jpg" alt="鸭子">
+            我的小站
+        </a>
+    </h1>
+</header>
+
+<nav data-am-widget="menu" class="am-menu  am-menu-dropdown1"
+     data-am-menu-collapse
+>
+    <a href="javascript: void(0)" class="am-menu-toggle">
+        <i class="am-menu-toggle-icon am-icon-list"></i>
+    </a>
+
+    <ul class="am-menu-nav am-avg-sm-1 am-collapse">
+        <li class="am-menu-nav-channel"><a href="/tree" style="background:#2e8b57;">古树</a></li>
+        <li class="am-menu-nav-channel"><a href="/wormList" style="background:#2e8b57;" >常见病虫害</a></li>
+        <li class="am-menu-nav-channel"><a href="##" style="background:#2e8b57;">进入栏目</a></li>
+        <li class="am-parent">
+            <a href="#c3" style="background: #2e8b57;">进入栏目</a>
+            <ul class="am-menu-sub am-collapse  am-avg-sm-4 ">
+                <li class="">
+                    <a href="##" class="">公司</a>
+                </li>
+                <li class="">
+                    <a href="##" class="">人物</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<a href="/assets/img/worms/{{worm.name}}.jpg" class="" style="width: 100%;">
+    <img src="../assets/img/worms/{{worm.name}}.jpg" alt="" style="width: 100%;"/>
+</a>
+<h2>{{worm.title}}</h2>
+<p>{{worm.text}}</p>
+{{include '../subgroup/footer.html'}}
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="../assets/js/amazeui.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>

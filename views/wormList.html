@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <title>虫子</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="../assets/css/app.css">
+</head>
+<body>
+{{include '../subgroup/header.html'}}
+
+<!--内容列表-->
+<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+    <div class="am-list-news-bd">
+        <ul class="am-list">
+            <!--缩略图在标题左边-->
+            {{each worms}}
+            <li class="am-g am-list-item-desced">
+                <div class="am-u-sm-4 am-list-thumb">
+                    <a href="/worm?name={{$value.name}}" class="">
+                        <img src="../assets/img/worms/{{$value.name}}.jpg" alt=""/>
+                    </a>
+                </div>
+                <div class=" am-list-main">
+                    <h3 class="am-list-item-hd"><a href="/worm?name={{$value.name}}" class="">{{$value.title}}</a></h3>
+                    <div class="am-list-item-text">
+                        {{$value.text}}。
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+</div>
+
+{{include '../subgroup/footer.html'}}
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="../assets/js/jquery.min.js"></script>
+<!--<![endif]-->
+<script src="../assets/js/amazeui.min.js"></script>
+<script src="../assets/js/app.js"></script>
+</body>
+</html>
