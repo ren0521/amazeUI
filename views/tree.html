@@ -15,11 +15,14 @@
 <body>
 {{include '../subgroup/header.html'}}
 
-<a href="/assets/img/worms/{{worm.name}}.jpg" class="" style="width: 100%;">
-    <img src="../assets/img/worms/{{worm.name}}.jpg" alt="" style="width: 100%;"/>
+<a href="/assets/img/trees/{{tree.title}}.jpg" class="" style="width: 100%;">
+    <img src="/assets/img/trees/{{tree.title}}.jpg" alt="" style="width: 100%;" />
 </a>
-<h2>{{worm.title}}</h2>
-<p>{{worm.text}}</p>
+<h2>编号：{{tree.title}}</h2>
+树龄：<b>{{tree.age}}</b> 年
+<br>
+品种：{{tree.name}}
+<p>地址：{{tree.address}}</p>
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="../assets/js/jquery.min.js"></script>
 <!--<![endif]-->

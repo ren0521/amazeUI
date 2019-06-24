@@ -24,19 +24,19 @@
             {{each trees}}
             <li class="am-g am-list-item-desced">
                 <div class="am-u-sm-4 am-list-thumb">
-                    <a href="/assets/img/trees/{{$value.title}}.jpg" class="">
-                        <img src="../assets/img/trees/{{$value.title}}.jpg" alt=""/>
+                    <a href="/tree?name={{$value.name}}" class="">
+                        <img src="/assets/img/trees/{{$value.title}}.jpg" alt=""/>
                     </a>
                 </div>
                 <div class=" am-list-main">
-                    <h3 class="am-list-item-hd"><a href="/assets/img/trees/{{$value.title}}.jpg" class="">{{$value.title}}</a></h3>
+                    <h3 class="am-list-item-hd"><a href="/tree?name={{$value.name}}" class="">{{$value.title}}</a></h3>
 
                     <div class="am-list-item-text">
-                        位于{{$value.address}}。
-                    </div>
-                    <div class="am-list-item-text">
-                        品种：{{$value.name}}
                         树龄：<b>{{$value.age}}</b> 年
+                        <br>
+                        品种：{{$value.name}}
+                        <br>
+                        位于{{$value.address}}。
                     </div>
                 </div>
             </li>

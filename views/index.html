@@ -41,7 +41,7 @@
 <div data-am-widget="slider" class="am-slider am-slider-default" data-am-slider='{}'>
     <ul class="am-slides">
         <li>
-            <a href="/tree">
+            <a href="/trees">
                 <img src="../assets/img/trees/1519.JPG">
                 <div class="am-slider-desc">古树名木</div>
             </a>
@@ -94,6 +94,20 @@
 
 
             </li>
+            <li class="am-g am-list-item-dated">
+                <a href="##" class="am-list-item-hd ">我很囧，你保重....晒晒旅行中的那些囧！</a>
+
+                <span class="am-list-date">2013-09-18</span>
+
+
+            </li>
+            <li class="am-g am-list-item-dated">
+                <a href="##" class="am-list-item-hd ">我最喜欢的一张画</a>
+
+                <span class="am-list-date">2013-10-14</span>
+
+
+            </li>
         </ul>
     </div>
 
@@ -108,7 +122,6 @@
         <li class="am-active"><a href="[data-tab-panel-0]">青春</a></li>
         <li class=""><a href="[data-tab-panel-1]">彩虹</a></li>
         <li class=""><a href="[data-tab-panel-2]">歌唱</a></li>
-        <li class=""><a href="[data-tab-panel-3]">睡觉</a></li>
     </ul>
     <div class="am-tabs-bd">
         <div data-tab-panel-0 class="am-tab-panel am-active">
@@ -120,10 +133,26 @@
         <div data-tab-panel-2 class="am-tab-panel ">
             【歌唱】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
         </div>
-        <div data-tab-panel-3 class="am-tab-panel ">
-            【睡觉】那时候有多好，任雨打湿裙角。忍不住哼起，心爱的旋律。绿油油的树叶，自由地在说笑。燕子忙归巢，风铃在舞蹈。经过青春的草地，彩虹忽然升起。即使视线渐渐模糊，它也在我心里。就像爱过的旋律，没人能抹去。因为生命存在失望，歌唱，所以才要歌唱。
-        </div>
     </div>
+</div>
+<div style="width:100%;height: 50px;background: #008B8B"></div>
+<hr data-am-widget="divider" style="" class="am-divider am-divider-default" />
+<!--用户区-->
+<div style="width: 80%;margin: auto;">
+    <form action="/form" class="am-form am-form-horizontal" method="post">
+        <div class="am-form-group">
+            <input type="text" id="user" name="user" required placeholder="姓名" class="am-input-sm">
+        </div>
+        <div class="am-form-group">
+            <input type="email" id="tel" name="em" required placeholder="输入你的电子邮件" class="am-input-sm">
+        </div>
+        <div class="am-form-group">
+            <textarea class="" rows="5" cols="10" name="textarea" id="doc-ta-1" placeholder="请输入50字内" class="am-input-sm" maxlength="50" class="am-input-sm"></textarea>
+        </div>
+        <button type="submit"  class="am-btn am-btn-default am-radius am-btn-sm" disabled>提交</button>
+        <button type="reset" class="am-btn am-btn-default am-radius am-btn-sm">取消</button>
+    </form>
+
 </div>
 
 {{include '../subgroup/footer.html'}}

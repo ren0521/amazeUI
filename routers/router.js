@@ -28,11 +28,19 @@ router.get('/',function(req,res){
     console.log(++num)
 })
 
-router.get('/tree',function(req,res){
+router.get('/trees',function(req,res){
     res.render('trees.html',{
         trees:trees
     })
     console.log(++num)
+})
+
+router.get('/tree',function (req,res) {
+    res.render('tree.html',{
+        tree:trees.find(function (item) {
+            return item.name === req.query.name
+        })
+    })
 })
 
 router.get('/wormList',function(req,res){
@@ -41,9 +49,6 @@ router.get('/wormList',function(req,res){
 })
 
 router.get('/worm',function (req, res) {
-    worms.find(function (item) {
-        return item.name === req.query.name
-    })
     res.render('worm.html',{
             worm:worms.find(function (item) {
             return item.name === req.query.name
@@ -51,4 +56,8 @@ router.get('/worm',function (req, res) {
     })
 })
 
+router.post('/form',function (req,res) {
+    var person =  req.body
+    res.redirect(301, '/');
+})
 module.exports = router
